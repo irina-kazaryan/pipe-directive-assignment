@@ -1,0 +1,8 @@
+<div class="card text-white mb-4" [style.background]="getStyles()">
+  <div class="card-body">
+    <h5 class="card-title">{{ user.firstName }} {{ user.lastName }}</h5>
+    <p class="card-text">{{ user.about }}</p>
+    <p class="card-text">{{ user.birthDate | age }}</p>
+    <span class="badge border">{{ user.status }}</span>
+  </div>
+</div>
